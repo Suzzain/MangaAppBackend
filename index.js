@@ -52,7 +52,7 @@ res.send(
 
 application.use(function(err, req, res, next) {
 
-	//res.status(err.status);
+	res.status(err.status);
 	res.send({
 		"message": err.message
 	});
